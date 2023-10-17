@@ -1,0 +1,7 @@
+addDataSource SAFEGRAPH
+templateAdd {"feature": "PLACEKEY", "template": "global_id", "behavior": "F1E", "comparison": "exact_comp"}
+setRule {"id": 164, "rtype_id": 3}
+setFeature {"feature": "GEO_LOC", "matchKey": "Yes"}	
+
+save
+	
