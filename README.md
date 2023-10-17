@@ -2,7 +2,7 @@
 
 ## Overview
 
-The [safegraph_mapper.py](safegraph_mapper.py) python script converts the SafeGraph Places data to json files ready to load into Senzing.
+The [safegraph-mapper.py](safegraph-mapper.py) python script converts the SafeGraph Places data to json files ready to load into Senzing.
 
 You can purchase SafeGraph Places data at [www.safegraph.com/pricing](https://www.safegraph.com/pricing).  They have even provided free samples
 of their data already mapped to Senzing json format via this mapper [here](https://www.safegraph.com/free-data/senzing-data-sample)
@@ -10,8 +10,8 @@ of their data already mapped to Senzing json format via this mapper [here](https
 Usage:
 
 ```console
-python safegraph_mapper.py --help
-usage: safegraph_mapper.py [-h] [-i INPUT_PATH] [-o OUTPUT_FILE] [-l LOG_FILE]
+python safegraph-mapper.py --help
+usage: safegraph-mapper.py [-h] [-i INPUT_PATH] [-o OUTPUT_FILE] [-l LOG_FILE]
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -40,26 +40,26 @@ optional arguments:
 
 Place the the following files on a directory of your choice ...
 
-- [safegraph_mapper.py](safegraph_mapper.py)
-- [safegraph_config_updates.g2c](safegraph_config_updates.g2c)
+- [safegraph-mapper.py](safegraph-mapper.py)
+- [safegraph-config-updates.g2c](safegraph-config-updates.g2c)
 
 
 ### Configuring Senzing
 
 *Note:* This only needs to be performed one time! In fact you may want to add these configuration updates to a master configuration file for all your data sources.
 
-Loading the SafeGraph Places data into Senzing requires some additional configuration provoded in the [safegraph_config_updates.g2c](safegraph_config_updates.g2c) file.
+Loading the SafeGraph Places data into Senzing requires some additional configuration provoded in the [safegraph-config-updates.g2c](safegraph-config-updates.g2c) file.
 To apply it, from your Senzing project's python directrory type ...
 
 ```console
-python3 G2ConfigTool.py <path-to-file>/safegraph_config_updates.g2c
+python3 G2ConfigTool.py <path-to-file>/safegraph-config-updates.g2c
 ```
 
 ### Running the mapper
 
 Safegraph places data comes in a csv file format.   Once you download it, in a terminal session, navigate to where you downloaded this mapper and type ...
 ```console
-python3 safegraph_mapper.py -i /download_path/safegraph_data.csv -o /output_path/safegraph_data.json
+python3 safegraph-mapper.py -i /download_path/safegraph_data.csv -o /output_path/safegraph_data.json
 ```
 - Add the -l --log_file argument to generate a mapping statistics file
 
