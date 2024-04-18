@@ -63,6 +63,12 @@ class mapper():
         #      zzw-227@5x4-86x-cqz (238)
         #      22q-22c@5x4-4s5-ch5 (236)
         #json_data['PARENT_PLACEKEY'] = raw_data['PARENT_PLACEKEY']
+        json_data['REL_ANCHOR_DOMAIN'] = 'PLACEKEY'
+        json_data['REL_ANCHOR_KEY'] = raw_data['PLACEKEY']
+        if raw_data['PARENT_PLACEKEY'] and raw_data['PARENT_PLACEKEY'] != raw_data['PLACEKEY']:
+            json_data['REL_POINTER_DOMAIN'] = 'PLACEKEY'
+            json_data['REL_POINTER_KEY'] = raw_data['PARENT_PLACEKEY']
+            json_data['REL_POINTER_ROLE'] = 'PARENT'
 
         # columnName: SAFEGRAPH_BRAND_IDS
         # 16.52 populated, 4.15 unique
