@@ -78,6 +78,6 @@ python3 G2Loader.py -f /output_path/safegraph_data.json
 [Loading into Senzing]: #loading-into-senzing
 [Prerequisites]: #prerequisites
 [Running the mapper]: #running-the-mapper
-[safegraph-config-updates.g2c]: safegraph-config-updates.g2c
-[safegraph-mapper.py]: safegraph-mapper.py
+[safegraph-config-updates.g2c]: src/safegraph-config-updates.g2c
+[safegraph-mapper.py]: src/safegraph-mapper.py
 [www.safegraph.com/pricing]: https://www.safegraph.com/pricing
