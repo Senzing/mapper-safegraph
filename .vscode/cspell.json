@@ -5,12 +5,15 @@
   "language": "en",
   // words - list of words to be always considered correct
   "words": [
+    "Analysing",
     "CCLA",
     "CODEOWNER",
     "dateutil",
     "DSRC",
     "ICLA",
+    "isort",
     "Keyport",
+    "kwargs",
     "Lynnwood",
     "mypy",
     "NAICS",
@@ -18,18 +21,24 @@
     "POSTDIRECTION",
     "PREDIRECTION",
     "pylint",
+    "pytest",
     "Redbox",
     "rtype",
     "safegraph",
     "Seatac",
     "Senzing",
+    "setuptools",
+    "shellcheck",
     "Snohomish",
     "Sprague",
     "stackoverflow",
-    "subrecord"
+    "subrecord",
+    "venv"
   ],
   "ignorePaths": [
     ".git/**",
-    ".mypy_cache/**"
+    ".mypy_cache/**",
+    "development-requirements.txt",
+    "documentation-requirements.txt"
   ]
 }
