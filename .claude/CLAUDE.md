@@ -9,16 +9,19 @@ This repository contains a data mapper that converts SafeGraph Places CSV data t
 ## Commands
 
 ### Install dependencies
+
 ```bash
 python -m pip install --group all .
 ```
 
 ### Run the mapper
+
 ```bash
 python src/safegraph-mapper.py -i <input.csv> -o <output.json> [-l <log_file.json>]
 ```
 
 ### Lint
+
 ```bash
 pylint $(git ls-files '*.py' ':!:docs/source/*')
 ```
