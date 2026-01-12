@@ -31,6 +31,7 @@ pylint $(git ls-files '*.py' ':!:docs/source/*')
 The codebase consists of two files in `src/`:
 
 - **safegraph-mapper.py**: Single-file mapper with a `mapper` class that:
+
   - `map()`: Transforms a single CSV row to Senzing JSON format, mapping SafeGraph fields to Senzing attributes (e.g., `LOCATION_NAME` → `LOCATION_NAME_ORG`, `LATITUDE` → `BUSINESS_GEO_LATITUDE`)
   - Handles parent-child relationships via `REL_POINTER_*` fields for hierarchical place data
   - Collects statistics for logging via `stat_pack`
@@ -46,4 +47,4 @@ The codebase consists of two files in `src/`:
 
 ## Senzing-Specific Guidance
 
-Follow Senzing standards at: https://raw.githubusercontent.com/senzing-factory/claude/refs/tags/v1/commands/senzing.md
+Follow Senzing standards at: <https://raw.githubusercontent.com/senzing-factory/claude/refs/tags/v1/commands/senzing.md>
