@@ -1,5 +1,8 @@
-# mapper-safegraph
+# template-python
 
-Placeholder for [GitHub pages](https://pages.github.com/).
+Placeholder for [GitHub pages].
 
-See [https://hub.senzing.com/mapper-safegraph](https://hub.senzing.com/mapper-safegraph).
+See [GitHub page].
+
+[GitHub page]: https://garage.senzing.com/mapper-safegraph
+[GitHub pages]: https://pages.github.com/
